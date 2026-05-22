@@ -1,0 +1,6 @@
+[build]
+  command   = "bash -lc \"curl -fsSL https://bun.sh/install | bash && export PATH=\\\"$HOME/.bun/bin:$PATH\\\" && bun install && bun run build\""
+  publish   = "dist/client"
+
+[build.environment]
+  NODE_VERSION = "22"
